@@ -83,3 +83,5 @@ else:
         while tempototalmin >= 1:
             minutos += 1
             tempototalmin -= 1
+
+print(f"O JOGO DUROU {horas} HORA(S) E {minutos} MINUTO(S)")
