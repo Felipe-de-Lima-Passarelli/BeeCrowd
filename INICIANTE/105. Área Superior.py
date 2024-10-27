@@ -11,16 +11,16 @@ for i in range(0, 12):
     matriz.append(linha)
 
 soma = 0
-contador = 0
 
 if O == "S":
-    for linha in range(0, 11):
-        for coluna in range((linha + 1), 12):
+    for linha in range(0, 5):
+        for coluna in range((1 + linha), (11 - linha)):
             soma += matriz[linha][coluna]
     resultado = soma
 else:
-    for linha in range(0, 11):
-        for coluna in range((linha + 1), 12):
+    contador = 0
+    for linha in range(0, 5):
+        for coluna in range((1 + linha), (11 - linha)):
             soma += matriz[linha][coluna]
             contador += 1
     resultado = soma/contador

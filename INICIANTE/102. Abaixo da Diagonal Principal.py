@@ -11,17 +11,21 @@ for i in range(0, 12):
     matriz.append(linha)
 
 soma = 0
-contador = 0
 
 if O == "S":
-    for linha in range(0, 11):
-        for coluna in range((linha + 1), 12):
-            soma += matriz[linha][coluna]
+    for linha in range(1, 12):
+        c = 0
+        while c < linha:
+            soma += matriz[linha][c]
+            c += 1
     resultado = soma
 else:
-    for linha in range(0, 11):
-        for coluna in range((linha + 1), 12):
-            soma += matriz[linha][coluna]
+    contador = 0
+    for linha in range(1, 12):
+        c = 0
+        while c < linha:
+            soma += matriz[linha][c]
+            c += 1
             contador += 1
     resultado = soma/contador
 
